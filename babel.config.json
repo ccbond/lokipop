@@ -1,0 +1,18 @@
+// Copyright (c) 2023 ccbond
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/preset-typescript"
+  ]
+}
