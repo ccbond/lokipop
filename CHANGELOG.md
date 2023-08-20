@@ -1,3 +1,12 @@
+## [0.1.5](https://github.com/ccbond/lokipop/compare/v0.1.4...v0.1.5) (2023-08-20)
+
+
+### Features
+
+* add detail in package ([7a1bf60](https://github.com/ccbond/lokipop/commit/7a1bf606ea8877f50087a11b36a7ab54ba38e807))
+
+
+
 ## [0.1.4](https://github.com/ccbond/lokipop/compare/v0.1.3...v0.1.4) (2023-08-20)
 
 
