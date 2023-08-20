@@ -5,7 +5,7 @@ Experience Loki on edge runtime as effortlessly as enjoying a lollipop.
 ## Installation
 
 ```bash
-pnpm install
+pnpm i @syntsugar/lokipop
 ```
 
 ## Usage
@@ -22,4 +22,8 @@ await logger.send();
 
 ## ChangeLog
 
+For detailed changelog, check CHANGELOG.md.
+
 ## License
+
+This project is licensed under the MIT License. See the included LICENSE file for more details.
