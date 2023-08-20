@@ -1,3 +1,12 @@
+## [0.1.6](https://github.com/ccbond/lokipop/compare/v0.1.5...v0.1.6) (2023-08-20)
+
+
+### Features
+
+* add usage in readme ([434663a](https://github.com/ccbond/lokipop/commit/434663ad44d43e2f03bc1108abb8bae1d07dfc2d))
+
+
+
 ## [0.1.5](https://github.com/ccbond/lokipop/compare/v0.1.4...v0.1.5) (2023-08-20)
 
 
