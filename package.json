@@ -9,7 +9,7 @@
     "start": "ts-node dist/index.js",
     "test:watch": "jest --watch",
     "lint": "eslint . --ext .ts",
-    "prepare": "pnpm run build",
+    "prepare": "npm run build",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "git push --follow-tags",
     "prepublishOnly": "npm run build"
