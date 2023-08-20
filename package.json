@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syntsugar/lokipop"
+    "url": "git+https://github.com/ccbond/lokipop"
   },
   "private": false,
   "type": "module",
