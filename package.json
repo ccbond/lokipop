@@ -1,6 +1,6 @@
 {
   "name": "@syntsugar/lokipop",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Experience Loki on edge runtime as effortlessly as enjoying a lollipop.",
   "main": "dist/index.js",
   "scripts": {

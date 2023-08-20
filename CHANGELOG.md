@@ -1,3 +1,12 @@
+## [0.1.8](https://github.com/ccbond/lokipop/compare/v0.1.7...v0.1.8) (2023-08-20)
+
+
+### Bug Fixes
+
+* add detail on readme ([d1e1099](https://github.com/ccbond/lokipop/commit/d1e1099b781d19ceca66da7d98c2fe22cbdc9138))
+
+
+
 ## [0.1.7](https://github.com/ccbond/lokipop/compare/v0.1.6...v0.1.7) (2023-08-20)
 
 
