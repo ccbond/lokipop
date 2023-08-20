@@ -11,7 +11,13 @@ pnpm install
 ## Usage
 
 ```typescript
+const logger = new LokiLogger({
+  url: "http://example.com",
+});
 
+logger.debug("Test Debug Message");
+
+await logger.send();
 ```
 
 ## ChangeLog
