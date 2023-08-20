@@ -11,7 +11,8 @@
     "lint": "eslint . --ext .ts",
     "prepare": "pnpm run build",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "loki",
@@ -24,7 +25,11 @@
   "private": false,
   "type": "module",
   "author": "ccbond",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccbond/lokipop/issues"
+  },
+  "homepage": "https://github.com/ccbond/lokipop#readme",
   "devDependencies": {
     "@babel/preset-typescript": "^7.22.5",
     "@types/jest": "^29.5.3",
