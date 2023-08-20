@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/ccbond/lokipop/compare/v0.1.3...v0.1.4) (2023-08-20)
+
+
+### Features
+
+* change right github repo ([83b61b8](https://github.com/ccbond/lokipop/commit/83b61b85617c43c67abb0847345688b68449e64b))
+
+
+
 ## [0.1.3](https://github.com/syntsugar/lokipop/compare/v0.1.2...v0.1.3) (2023-08-20)
 
 ### Features
