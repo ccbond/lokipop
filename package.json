@@ -21,6 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/syntsugar/lokipop"
   },
+  "private": false,
   "type": "module",
   "author": "ccbond",
   "license": "ISC",
