@@ -1,3 +1,12 @@
+## [0.1.7](https://github.com/ccbond/lokipop/compare/v0.1.6...v0.1.7) (2023-08-20)
+
+
+### Bug Fixes
+
+* can not use pnpm in prepare ([8cc718b](https://github.com/ccbond/lokipop/commit/8cc718b294846b1a581c1a378a423dc68af712a9))
+
+
+
 ## [0.1.6](https://github.com/ccbond/lokipop/compare/v0.1.5...v0.1.6) (2023-08-20)
 
 
