@@ -1,3 +1,12 @@
+## [0.1.10](https://github.com/ccbond/lokipop/compare/v0.1.9...v0.1.10) (2023-08-23)
+
+
+### Bug Fixes
+
+* export loki logger config ([bf5da51](https://github.com/ccbond/lokipop/commit/bf5da511600438f564ee293e624194501bc2843d))
+
+
+
 ## [0.1.9](https://github.com/ccbond/lokipop/compare/v0.1.8...v0.1.9) (2023-08-20)
 
 
