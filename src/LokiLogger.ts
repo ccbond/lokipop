@@ -1,15 +1,15 @@
 // Copyright (c) 2023 ccbond
-// 
+//
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
 interface LokiLogPayload {
-  level: 'debug' | 'info' | 'warn' | 'error';
+  level: "debug" | "info" | "warn" | "error";
   message: string;
-  timestamp: number;  // Unix timestamp, for example from Date.now()
+  timestamp: number; // Unix timestamp, for example from Date.now()
 }
 
-interface LokiLoggerConfig {
+export interface LokiLoggerConfig {
   url: string;
   user?: string;
   secret?: string;
@@ -25,12 +25,15 @@ export class LokiLogger {
 
   constructor(config: LokiLoggerConfig) {
     this.url = config.url;
-    this.user = config.user ?? '';
-    this.secret = config.secret ?? '';
+    this.user = config.user ?? "";
+    this.secret = config.secret ?? "";
     this.mdc = config.mdc ?? {};
   }
 
-  private format(level: LokiLogPayload['level'], message: string): LokiLogPayload {
+  private format(
+    level: LokiLogPayload["level"],
+    message: string
+  ): LokiLogPayload {
     return {
       level,
       message,
@@ -45,46 +48,44 @@ export class LokiLogger {
           level: log.level,
           ...this.mdc,
         },
-        values: [
-          [log.timestamp.toString(), log.message]
-        ]
-      }
-    })
+        values: [[log.timestamp.toString(), log.message]],
+      };
+    });
 
-    const sendLogsPromise = await fetch(this.url + '/loki/api/v1/push', {
-      method: 'POST',
+    const sendLogsPromise = await fetch(this.url + "/loki/api/v1/push", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Basic ' + btoa(this.user + ':' + this.secret)
+        "Content-Type": "application/json",
+        Authorization: "Basic " + btoa(this.user + ":" + this.secret),
       },
-      body: JSON.stringify({ streams })
-    })
-    return sendLogsPromise
+      body: JSON.stringify({ streams }),
+    });
+    return sendLogsPromise;
   }
 
   public debug(message: string) {
-    const log = this.format('debug', message);
-    console.log('Debug: ', message)
+    const log = this.format("debug", message);
+    console.log("Debug: ", message);
     this.logs.push(log);
   }
 
   public info(message: string) {
-    const log = this.format('info', message);
-    console.log('Info: ', message)
+    const log = this.format("info", message);
+    console.log("Info: ", message);
     this.logs.push(log);
   }
 
   public warn(message: string) {
-    const log = this.format('warn', message);
-    console.log('Warn: ', message)
+    const log = this.format("warn", message);
+    console.log("Warn: ", message);
     this.logs.push(log);
   }
 
   public error(message: string) {
-    const log = this.format('error', message);
-    console.log('Error: ', message)
+    const log = this.format("error", message);
+    console.log("Error: ", message);
     this.logs.push(log);
   }
 }
 
-export default LokiLogger
+export default LokiLogger;
