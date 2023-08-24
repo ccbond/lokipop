@@ -34,10 +34,11 @@ export class LokiLogger {
     level: LokiLogPayload["level"],
     message: string
   ): LokiLogPayload {
+    let timestamp = Math.floor(Date.now() / 1000);
     return {
       level,
       message,
-      timestamp: Date.now(),
+      timestamp,
     };
   }
 
@@ -48,7 +49,7 @@ export class LokiLogger {
           level: log.level,
           ...this.mdc,
         },
-        values: [[log.timestamp.toString(), log.message]],
+        values: [[log.timestamp.toString() + "000000000", log.message]],
       };
     });
 
