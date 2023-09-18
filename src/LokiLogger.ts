@@ -32,9 +32,15 @@ export class LokiLogger {
 
   private format(
     level: LokiLogPayload["level"],
-    msg: any[]
+    ...msg: any[]
   ): LokiLogPayload {
-    const message = msg.join(";");
+    const message = msg.map(item => {
+      if (typeof item === "object") {
+        return JSON.stringify(item);
+      }
+      return String(item);
+    }).join(";");
+
     let timestamp = Math.floor(Date.now() / 1000);
     return {
       level,
@@ -65,25 +71,25 @@ export class LokiLogger {
     return sendLogsPromise;
   }
 
-  public debug(message: any[]) {
+  public debug(...message: any[]) {
     const log = this.format("debug", message);
     console.log("Debug: ", message);
     this.logs.push(log);
   }
 
-  public info(message: any[]) {
+  public info(...message: any[]) {
     const log = this.format("info", message);
     console.log("Info: ", message);
     this.logs.push(log);
   }
 
-  public warn(message: any[]) {
+  public warn(...message: any[]) {
     const log = this.format("warn", message);
     console.log("Warn: ", message);
     this.logs.push(log);
   }
 
-  public error(message: any[]) {
+  public error(...message: any[]) {
     const log = this.format("error", message);
     console.log("Error: ", message);
     this.logs.push(log);
