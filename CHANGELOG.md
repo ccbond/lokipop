@@ -1,3 +1,12 @@
+## [0.1.14](https://github.com/ccbond/lokipop/compare/v0.1.13...v0.1.14) (2023-09-18)
+
+
+### Features
+
+* support message as any array ([42da136](https://github.com/ccbond/lokipop/commit/42da136c9aa1c2c2d4b7095ae943f1a0fe6a210d))
+
+
+
 ## [0.1.13](https://github.com/ccbond/lokipop/compare/v0.1.11...v0.1.13) (2023-09-18)
 
 
